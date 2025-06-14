@@ -213,7 +213,7 @@ const App: React.FC = () => {
 
   const getCoordinates = async (province: string, district: string) => {
     // This is a simplified version. You should implement proper geocoding
-    const coordinates = {
+    const coordinates: {[key: string]: { lat: number; lng: number }} = {
       'İstanbul': { lat: 41.0082, lng: 28.9784 },
       'Ankara': { lat: 39.9334, lng: 32.8597 },
       'İzmir': { lat: 38.4237, lng: 27.1428 },
