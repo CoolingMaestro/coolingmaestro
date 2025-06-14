@@ -35,7 +35,7 @@ Profesyonel soğuk hava depoları için gelişmiş soğutma yükü hesaplama ve 
 
 1. Repoyu klonlayın:
 ```bash
-git clone https://github.com/yourusername/cooling-maestro.git
+git clone https://github.com/CoolingMaestro/CoolingMaestro.git
 cd cooling-maestro
 ```
 
@@ -122,4 +122,4 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 Cooling Maestro Team - info@coolingmaestro.com
 
-Proje Linki: [https://github.com/yourusername/cooling-maestro](https://github.com/yourusername/cooling-maestro)
+Proje Linki: [https://github.com/CoolingMaestro/CoolingMaestro](https://github.com/CoolingMaestro/CoolingMaestro)
