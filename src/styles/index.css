@@ -2,14 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* Özel stiller */
-.swiper-pagination-bullet {
-  @apply bg-white opacity-50;
-}
-
-.swiper-pagination-bullet-active {
-  @apply opacity-100;
-}
+/* Özel stiller - Swiper stilleri artık bileşen bazlı CSS modüllerinde tanımlanıyor */
 
 /* Ant Design özelleştirmeleri */
 .ant-btn-primary {
