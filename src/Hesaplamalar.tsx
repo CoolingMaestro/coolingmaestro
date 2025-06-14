@@ -12,9 +12,6 @@ import {
   Form,
   InputNumber,
   Breadcrumb,
-  Spin,
-  Tooltip,
-  Space,
   Typography,
   Checkbox,
   Divider,
@@ -24,16 +21,10 @@ import {
 import {
   HomeOutlined,
   CalculatorOutlined,
-  InfoCircleOutlined,
   ArrowLeftOutlined,
   SaveOutlined,
-  CloseOutlined,
   EnvironmentOutlined,
   BuildOutlined,
-  ThunderboltOutlined,
-  TeamOutlined,
-  SettingOutlined,
-  ReloadOutlined,
   PlusOutlined,
   DeleteOutlined
 } from '@ant-design/icons';
