@@ -1,0 +1,319 @@
+/* Dashboard specific styles with CSS Modules for isolation */
+
+/* Dashboard wrapper */
+.dashboard {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 16rem;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  z-index: 10;
+  overflow-y: auto;
+}
+
+.sidebarHeader {
+  padding: 1.5rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.sidebarContent {
+  padding: 1rem;
+}
+
+.menuSection {
+  margin-bottom: 1.5rem;
+}
+
+.menuSectionTitle {
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuList li {
+  margin-bottom: 0.25rem;
+}
+
+/* Button styles */
+.roundedButton {
+  border-radius: 8px !important;
+}
+
+.menuButton {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.menuButtonActive {
+  color: #2563eb;
+  background-color: #eff6ff;
+}
+
+.menuButtonActive:hover {
+  background-color: #dbeafe;
+}
+
+.menuButtonInactive {
+  color: #374151;
+}
+
+.menuButtonInactive:hover {
+  background-color: #f3f4f6;
+}
+
+/* User profile section */
+.userProfile {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+/* Main content area */
+.mainContent {
+  margin-left: 16rem;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #e5e7eb;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 16rem;
+  z-index: 10;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 1.5rem;
+}
+
+/* Page content */
+.pageContent {
+  padding-top: 4rem;
+  padding: 4rem 1.5rem 1.5rem;
+}
+
+/* Stat cards */
+.statCard {
+  transition: box-shadow 0.3s ease;
+}
+
+.statCard:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.statIcon {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.statIconBlue { background-color: #dbeafe; }
+.statIconGreen { background-color: #d1fae5; }
+.statIconYellow { background-color: #fef3c7; }
+.statIconPurple { background-color: #ede9fe; }
+
+/* Icon replacements */
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.iconProjectDiagram::before { content: "📊"; }
+.iconCalculator::before { content: "🔢"; }
+.iconThermometer::before { content: "🌡️"; }
+.iconBox::before { content: "📦"; }
+.iconClipboardList::before { content: "📋"; }
+.iconBolt::before { content: "⚡"; }
+.iconPlusCircle::before { content: "➕"; }
+.iconBoxIcon::before { content: "📦"; }
+.iconMapMarker::before { content: "📍"; }
+.iconChartBar::before { content: "📊"; }
+.iconFilePdf::before { content: "📄"; }
+.iconChartLine::before { content: "📈"; }
+.iconChartPie::before { content: "🥧"; }
+.iconBell::before { content: "🔔"; }
+.iconExclamationTriangle::before { content: "⚠️"; }
+.iconClipboardCheck::before { content: "✅"; }
+.iconCheckCircle::before { content: "✓"; }
+.iconInfoCircle::before { content: "ℹ️"; }
+.iconQuestionCircle::before { content: "❓"; }
+.iconBook::before { content: "📚"; }
+.iconGraduationCap::before { content: "🎓"; }
+.iconPlay::before { content: "▶️"; }
+.iconHeadset::before { content: "🎧"; }
+
+/* Quick action buttons */
+.quickActionButton {
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.quickActionButton:hover {
+  transform: translateY(-2px);
+}
+
+.quickActionIcon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Notification items */
+.notificationItem {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid;
+}
+
+.notificationItemYellow {
+  background-color: #fef3c7;
+  border-color: #f59e0b;
+}
+
+.notificationItemOrange {
+  background-color: #fed7aa;
+  border-color: #f97316;
+}
+
+.notificationItemGreen {
+  background-color: #d1fae5;
+  border-color: #10b981;
+}
+
+.notificationItemBlue {
+  background-color: #dbeafe;
+  border-color: #3b82f6;
+}
+
+/* Help panel items */
+.helpItem {
+  display: block;
+  padding: 0.75rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.helpItem:hover {
+  background-color: #f3f4f6;
+}
+
+.helpIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+}
+
+.helpIconBlue { background-color: #dbeafe; color: #2563eb; }
+.helpIconGreen { background-color: #d1fae5; color: #059669; }
+.helpIconRed { background-color: #fee2e2; color: #dc2626; }
+
+/* Chart containers */
+.chartContainer {
+  height: 300px;
+}
+
+/* Search input */
+.searchInput {
+  border-radius: 0.5rem;
+  border-color: #e5e7eb;
+  width: 16rem;
+}
+
+/* Notification badge */
+.notificationButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.notificationButton:hover {
+  background-color: #f3f4f6;
+}
+
+/* Table overrides */
+.dashboard :global(.ant-table) {
+  overflow-x: auto;
+}
+
+.dashboard :global(.ant-btn) {
+  border-radius: 8px;
+}
+
+/* Card overrides */
+.dashboard :global(.ant-card) {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.dashboard :global(.ant-card:hover) {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Dropdown menu overrides */
+.dashboard :global(.ant-dropdown-menu) {
+  border-radius: 0.5rem;
+}
+
+.dashboard :global(.ant-menu-item:hover) {
+  background-color: #f3f4f6;
+}
+
+/* Avatar overrides */
+.dashboard :global(.ant-avatar) {
+  border: 2px solid white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}

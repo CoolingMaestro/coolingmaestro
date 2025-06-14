@@ -1,0 +1,202 @@
+/* LoginScreen specific styles with CSS Modules for isolation */
+
+/* Custom button styles */
+.roundedButton {
+  border-radius: 8px !important;
+}
+
+/* Login wrapper to isolate all styles */
+.loginScreen {
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main container */
+.loginContainer {
+  display: flex;
+  width: 100%;
+  max-width: 1536px; /* max-w-6xl */
+  height: 600px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+/* Left side branding */
+.brandingSection {
+  display: none;
+  background: linear-gradient(to bottom, #1d4ed8, #1e3a8a);
+  color: white;
+  padding: 2.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .brandingSection {
+    display: flex;
+    width: 40%;
+  }
+}
+
+/* Form section */
+.formSection {
+  width: 100%;
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .formSection {
+    width: 60%;
+    padding: 3rem;
+  }
+}
+
+/* Icon replacements */
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.iconCheckCircle::before { 
+  content: "✓"; 
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #93c5fd;
+  color: #1e3a8a;
+  text-align: center;
+  line-height: 1rem;
+  font-size: 0.75rem;
+}
+
+/* Form styles */
+.formContainer {
+  max-width: 28rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Logo container for mobile */
+.mobileLogoContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .mobileLogoContainer {
+    display: none;
+  }
+}
+
+/* Input field styles */
+.inputField {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-color: #d1d5db;
+}
+
+/* Social login buttons */
+.socialButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  border-color: #d1d5db;
+  border-radius: 8px;
+}
+
+.socialButton:hover {
+  border-color: #9ca3af;
+}
+
+/* Background illustration */
+.backgroundIllustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0.2;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Text styles */
+.brandingText {
+  position: relative;
+  z-index: 10;
+}
+
+/* Check items */
+.checkItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #dbeafe;
+}
+
+.checkItem + .checkItem {
+  margin-top: 0.5rem;
+}
+
+/* Divider text */
+.dividerText {
+  color: #6b7280;
+}
+
+/* Link styles */
+.link {
+  padding: 0;
+  color: #2563eb;
+}
+
+.link:hover {
+  color: #1d4ed8;
+}
+
+/* Ant Design overrides for login screen */
+.loginScreen :global(.ant-btn) {
+  border-radius: 8px;
+}
+
+.loginScreen :global(.ant-input) {
+  border-radius: 0.5rem;
+}
+
+.loginScreen :global(.ant-input-password) {
+  border-radius: 0.5rem;
+}
+
+.loginScreen :global(.ant-form-item) {
+  margin-bottom: 1rem;
+}
+
+.loginScreen :global(.ant-checkbox-wrapper) {
+  color: #4b5563;
+}
+
+/* Primary button */
+.primaryButton {
+  height: 3rem;
+  background-color: #2563eb;
+  border-radius: 8px;
+}
+
+.primaryButton:hover {
+  background-color: #1d4ed8;
+}

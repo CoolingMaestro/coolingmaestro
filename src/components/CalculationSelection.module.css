@@ -1,0 +1,126 @@
+/* CalculationSelection styles */
+
+.calculationSelection {
+  padding: 2rem 0;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.backButton {
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #6b7280;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.calculationCard {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.calculationCard:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: #93c5fd;
+}
+
+.calculationCard.selected {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.iconContainer {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #dbeafe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.cardTitleContainer {
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.cardSubtitle {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featureList li {
+  display: flex;
+  align-items: center;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.featureList li:last-child {
+  margin-bottom: 0;
+}
+
+/* Icon styles */
+.icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.iconBolt::before {
+  content: "⚡";
+  font-size: 1.25rem;
+  color: #3b82f6;
+}
+
+.iconClipboard::before {
+  content: "📋";
+  font-size: 1.25rem;
+  color: #3b82f6;
+}
+
+.iconCheck::before {
+  content: "✓";
+  color: #10b981;
+  font-weight: bold;
+}

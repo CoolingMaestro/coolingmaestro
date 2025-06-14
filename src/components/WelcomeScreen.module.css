@@ -1,0 +1,206 @@
+/* WelcomeScreen specific styles with CSS Modules for isolation */
+
+/* Custom button styles */
+.roundedButton {
+  border-radius: 8px !important;
+}
+
+/* Swiper customizations for WelcomeScreen */
+.welcomeScreen :global(.swiper-pagination-bullet) {
+  background-color: white;
+  opacity: 0.5;
+}
+
+.welcomeScreen :global(.swiper-pagination-bullet-active) {
+  opacity: 1;
+}
+
+/* Font Awesome icon replacements using Unicode or custom styles */
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.iconPlayCircle::before { content: "▶"; }
+.iconInfoCircle::before { content: "ⓘ"; }
+.iconExclamationTriangle::before { content: "⚠"; }
+.iconFileExcel::before { content: "📊"; }
+.iconRedoAlt::before { content: "↻"; }
+.iconCheckCircle::before { content: "✓"; }
+.iconCheck::before { content: "✓"; }
+.iconCalculator::before { content: "🔢"; }
+.iconCogs::before { content: "⚙"; }
+.iconCloudSun::before { content: "☁"; }
+.iconFilePdf::before { content: "📄"; }
+.iconEdit::before { content: "✏"; }
+.iconChartBar::before { content: "📊"; }
+.iconBuilding::before { content: "🏢"; }
+.iconTruck::before { content: "🚚"; }
+.iconCheese::before { content: "🧀"; }
+.iconPills::before { content: "💊"; }
+.iconStar::before { content: "★"; }
+.iconUser::before { content: "👤"; }
+.iconMapMarkerAlt::before { content: "📍"; }
+.iconPhoneAlt::before { content: "☎"; }
+.iconEnvelope::before { content: "✉"; }
+.iconCalendarAlt::before { content: "📅"; }
+
+/* Sector icons */
+.iconAppleAlt::before { content: "🍎"; }
+.iconDrumstickBite::before { content: "🍖"; }
+
+/* Isolated header styles */
+.welcomeHeader {
+  background: linear-gradient(to right, #1d4ed8, #1e3a8a);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome screen wrapper to isolate all styles */
+.welcomeScreen {
+  min-height: 100vh;
+  background-color: white;
+}
+
+/* Hero section background */
+.heroBackground {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Gradient overlays */
+.blueGradientOverlay {
+  background: linear-gradient(to right, rgba(30, 58, 138, 0.9), rgba(29, 78, 216, 0.7));
+}
+
+/* Card hover effects */
+.hoverCard {
+  transition: box-shadow 0.3s ease;
+}
+
+.hoverCard:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Progress bars */
+.progressBar {
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  height: 0.625rem;
+}
+
+.progressFill {
+  height: 0.625rem;
+  border-radius: 9999px;
+}
+
+/* CTA section gradient */
+.ctaGradient {
+  background: linear-gradient(to right, #1d4ed8, #1e3a8a);
+}
+
+/* Footer background */
+.footerBg {
+  background-color: #111827;
+}
+
+/* Ensure Ant Design components work well within our isolated styles */
+.welcomeScreen :global(.ant-btn) {
+  border-radius: 8px;
+}
+
+.welcomeScreen :global(.ant-card) {
+  border-radius: 0.5rem;
+}
+
+.welcomeScreen :global(.ant-collapse) {
+  border-radius: 0.5rem;
+}
+
+/* Testimonial swiper specific styles */
+.testimonialSwiper :global(.swiper-pagination) {
+  bottom: -20px;
+}
+
+/* Features chart container */
+.featuresChartContainer {
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* Icon containers */
+.iconContainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.iconContainerBlue {
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.iconContainerIndigo {
+  background-color: #e0e7ff;
+  color: #4f46e5;
+}
+
+.iconContainerGreen {
+  background-color: #d1fae5;
+  color: #059669;
+}
+
+.iconContainerPurple {
+  background-color: #ede9fe;
+  color: #7c3aed;
+}
+
+/* Problem cards */
+.problemCard {
+  transition: box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.problemCard:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Solution box */
+.solutionBox {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-left: 4px solid #10b981;
+}
+
+/* Demo result styling */
+.demoResult {
+  border-left: 1px solid #e5e7eb;
+  padding-left: 1.5rem;
+}
+
+/* Social icons */
+.socialIcon {
+  color: #9ca3af;
+  transition: color 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: white;
+}
+
+/* Payment icons */
+.paymentIcon {
+  font-size: 1.25rem;
+  color: #9ca3af;
+}
