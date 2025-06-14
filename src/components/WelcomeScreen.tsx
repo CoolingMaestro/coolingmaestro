@@ -8,12 +8,8 @@ Form,
 Input,
 Select,
 Typography,
-Carousel,
 Divider,
-Row,
-Col,
 Tag,
-Tooltip
 } from 'antd';
 import * as echarts from 'echarts';
 import { Swiper, SwiperSlide } from 'swiper/react';
