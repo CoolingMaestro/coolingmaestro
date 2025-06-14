@@ -5,7 +5,7 @@ import { HomeOutlined } from "@ant-design/icons";
 // Bileşenler
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
-import WelcomeScreen from './components/WelcomeScreen';
+import Karsilama from './karsilama'; // Karşılama ekranı
 import LoginScreen from './components/LoginScreen';
 import Dashboard from './components/Dashboard';
 import LocationStep from './components/forms/LocationStep';
@@ -182,7 +182,7 @@ const App: React.FC = () => {
           }}
         />
       ) : !showCalculationForm ? (
-        <WelcomeScreen 
+        <Karsilama 
           onStartCalculation={handleStartCalculation}
           onLogin={() => setShowLoginScreen(true)}
         />
