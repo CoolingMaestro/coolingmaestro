@@ -53,4 +53,4 @@ Thumbs.db
 
 # Package lock dosyaları (tercih edilen: pnpm)
 package-lock.json
-yarn.lock
+yarn.lock"*:Zone.Identifier" 
